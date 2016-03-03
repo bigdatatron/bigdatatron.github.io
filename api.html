@@ -406,7 +406,7 @@ CLIENT_SECRET_KEY</code></pre>
 Login using credentials</p>
 
 <p><strong>URL</strong><br>
-<code>http://datatron.io/api/login</code></p>
+<code>http://api.datatron.io/login</code></p>
 
 <p><strong>Method</strong><br>
 POST</p>
@@ -423,7 +423,7 @@ POST</p>
 -H &quot;Content-Type: application/json&quot;  
 -X POST  
 -d &#39;{&quot;client_id&quot;: YOUR_CLIENT_ID, &quot;client_key&quot;: YOUR_CLIENT_KEY}&#39;   
-http://datatron.io/api/login</code></p>
+http://api.datatron.io/login</code></p>
 
 <p><strong>Example Response</strong></p>
 
@@ -457,7 +457,7 @@ http://datatron.io/api/login</code></p>
 Create schema for an <code>event</code>   </p>
 
 <p><strong>URL</strong><br>
-<code>http://datatron.io/api/createschema</code></p>
+<code>http://api.datatron.io/createschema</code></p>
 
 <p><strong>Method</strong><br>
 POST</p>
@@ -480,7 +480,7 @@ POST</p>
 -H &quot;Authorization: Bearer &lt;YOUR_SECURITY_TOKEN&gt;&quot;  
 -X POST  
 -d &#39;{&quot;properties&quot;:[{&quot;name&quot;: &quot;test_property_1&quot;, &quot;dt&quot;: &quot;long&quot;}]}&#39;   
-http://datatron.io/api/createschema/test_event_name_1</code></p>
+http://api.datatron.io/createschema/test_event_name_1</code></p>
 
 <p><strong>Example Response</strong>
 <code>
@@ -500,7 +500,7 @@ http://datatron.io/api/createschema/test_event_name_1</code></p>
 Get schema for an <code>event</code>   </p>
 
 <p><strong>URL</strong><br>
-<code>http://datatron.io/api/getschema/&lt;event_name&gt;</code></p>
+<code>http://api.datatron.io/getschema/&lt;event_name&gt;</code></p>
 
 <p><strong>Method</strong><br>
 GET</p>
@@ -521,7 +521,7 @@ GET</p>
 -H &quot;Content-Type: application/json&quot;  
 -H &quot;Authorization: Bearer &lt;YOUR_SECURITY_TOKEN&gt;&quot;  
 -X GET    
-http://datatron.io/api/getschema/test_event_name_1</code></p>
+http://api.datatron.io/getschema/test_event_name_1</code></p>
 
 <p><strong>Example Response</strong></p>
 
@@ -535,7 +535,7 @@ http://datatron.io/api/getschema/test_event_name_1</code></p>
 Get all properties for an <code>event</code>   </p>
 
 <p><strong>URL</strong><br>
-<code>http://datatron.io/api/getallproperties/&lt;event_name&gt;</code></p>
+<code>http://api.datatron.io/getallproperties/&lt;event_name&gt;</code></p>
 
 <p><strong>Method</strong><br>
 GET</p>
@@ -556,7 +556,7 @@ GET</p>
 -H &quot;Content-Type: application/json&quot;  
 -H &quot;Authorization: Bearer &lt;YOUR_SECURITY_TOKEN&gt;&quot;  
 -X GET    
-http://datatron.io/api/getallproperties/test_event_name_1</code></p>
+http://api.datatron.io/getallproperties/test_event_name_1</code></p>
 
 <p><strong>Example Response</strong></p>
 
@@ -570,7 +570,7 @@ http://datatron.io/api/getallproperties/test_event_name_1</code></p>
 Get datatype for a <code>property</code> in an <code>event</code>   </p>
 
 <p><strong>URL</strong><br>
-<code>http://datatron.io/api/getdatatype/&lt;event_name&gt;/&lt;property_name&gt;</code></p>
+<code>http://api.datatron.io/getdatatype/&lt;event_name&gt;/&lt;property_name&gt;</code></p>
 
 <p><strong>Method</strong><br>
 GET</p>
@@ -587,7 +587,7 @@ GET</p>
 -H &quot;Content-Type: application/json&quot;  
 -H &quot;Authorization: Bearer &lt;YOUR_SECURITY_TOKEN&gt;&quot;  
 -X GET    
-http://datatron.io/api/getdatatype/test_event_name_1/test_property_1</code></p>
+http://api.datatron.io/getdatatype/test_event_name_1/test_property_1</code></p>
 
 <p><strong>Example Response</strong></p>
 
@@ -601,7 +601,7 @@ http://datatron.io/api/getdatatype/test_event_name_1/test_property_1</code></p>
 Get all <code>events</code>   </p>
 
 <p><strong>URL</strong><br>
-<code>http://datatron.io/api/getallevents</code></p>
+<code>http://api.datatron.io/getallevents</code></p>
 
 <p><strong>Method</strong><br>
 GET</p>
@@ -622,7 +622,7 @@ GET</p>
 -H &quot;Content-Type: application/json&quot;  
 -H &quot;Authorization: Bearer &lt;YOUR_SECURITY_TOKEN&gt;&quot;  
 -X GET    
-http://datatron.io/api/getallevents</code></p>
+http://api.datatron.io/getallevents</code></p>
 
 <p><strong>Example Response</strong></p>
 
@@ -642,7 +642,7 @@ http://datatron.io/api/getallevents</code></p>
 Send data for <code>event</code>   </p>
 
 <p><strong>URL</strong><br>
-<code>http://datatron.io/api/events/&lt;event_name&gt;</code></p>
+<code>http://api.datatron.io/events/&lt;event_name&gt;</code></p>
 
 <p><strong>Method</strong><br>
 POST</p>
@@ -677,7 +677,7 @@ POST</p>
 -H &quot;Authorization: Bearer &lt;YOUR_SECURITY_TOKEN&gt;&quot;  
 -X POST  
 -d &#39;{&quot;data&quot;:[{&quot;test_property_1&quot;: &quot;1111&quot;}]}&#39;   
-http://datatron.io/api/events/test_event_name_1</code></p>
+http://api.datatron.io/events/test_event_name_1</code></p>
 
 <p><strong>Example Response</strong>
 <code>
