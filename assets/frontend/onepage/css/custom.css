@@ -1,1 +1,25 @@
 /* here you can put your own css to customize and override the theme */
+
+.hero-backgroung .bigdata {
+  position: absolute;
+  top: -445px;
+  left: 770px;
+}
+@media only screen and (max-width: 90em) {
+  .hero-backgroung .bigdata {
+    top: -250px;
+    left: 370px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .hero-backgroung .bigdata {
+    top: -200px;
+    left: 300px;
+  }
+}
+@media only screen and (max-width: 26em) {
+  .hero-backgroung .bigdata {
+    top: -75px;
+    left: 150px;
+  }
+}

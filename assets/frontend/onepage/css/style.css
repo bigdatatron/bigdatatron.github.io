@@ -430,11 +430,6 @@ a:hover {
   width: 100vw;
   height: 100vh;
 }
-.hero-backgroung .bigdata {
-  position: absolute;
-  top: -560px;
-  left: 700px;
-}
 .promo-block .tp-caption {
   margin-left: 3.5vw !important;
 }
