@@ -625,108 +625,34 @@ License: You must have a valid license purchased only from themeforest (the abov
   </div>
   <!-- Facts block END -->
   <!-- Prices block BEGIN -->
-  <div class="prices-block content content-center" id="prices">
-    <div class="container">
-      <h2 class="margin-bottom-50"><strong>Pricing</strong> Tables</h2>
-      <div class="row">
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Beginner</h3>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-                <strong>$<em>19</em></strong>
-                <p>Per Month</p>
-              </div>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-              </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Pro</h3>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-                <strong>$<em>25</em></strong>
-                <p>Per Month</p>
-              </div>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-              </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Expert</h3>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-                <strong>$<em>59</em></strong>
-                <p>Per Month</p>
-              </div>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-              </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Hi-Tech</h3>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-                <strong>$<em>98</em></strong>
-                <p>Per Month</p>
-              </div>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-                <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-              </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-      </div>
+  <div class="contact">
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var datatron = {lat: 37.7764085, lng: -122.3965145};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: datatron
+        });
+        var marker = new google.maps.Marker({
+          position: datatron,
+          map: map
+        });
+      }
+    </script>
+    <div class="contact-details">
+      <h1>Contact</h1>
+      <address>
+        <h4>Address</h4>
+        350 Townsend Street, #134<br>
+        San Francisco, CA 94107<br>
+        <h4>Phone</h4>
+        (415) 829-8411<br>
+        <h4>E-mail</h4>
+        <a href="mailto:sales@datatron.io">sales@datatron.io</a><br>
+      </address>
     </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjhYtKPWiGmC9O7CYELremKZ_glAUNnWw&callback=initMap"></script>
   </div>
   <!-- Prices block END -->
   <!-- Testimonials block BEGIN -->

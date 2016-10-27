@@ -55,3 +55,41 @@
     font-size: 2.5vw;
   }
 }
+.contact {
+  position: relative;
+  height: 50vh;
+}
+.contact #map {
+  position: absolute;
+  height: 40vh;
+  width: 70vw;
+  top: 5vh;
+  right: 0px;
+}
+.contact .contact-details {
+  position: absolute;
+  height: 40vh;
+  width: 26.5vw;
+  top: 5vh;
+  left: 2.5vw;
+  text-align: left;
+}
+.contact .contact-details h1 {
+  font-size: 2.3vw;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-weight: bold;
+  color: #575757;
+  margin: 0 0 3vh 0;
+}
+.contact .contact-details address h4 {
+  font-size: 1.6vw;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-weight: bold;
+  color: #575757;
+  margin: 2vh 0 1vh 0;
+}
+.contact .contact-details address {
+  font-family: Helvetica, Verdana, sans-serif;
+  font-size: 1.2vw;
+  color: #575757;
+}
